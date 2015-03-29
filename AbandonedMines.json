@@ -1,0 +1,550 @@
+    {
+        "title": "Abandoned Mines",
+        "date_updated": "2014-04-17",
+        "description": "This information exchange is for delivery of abandoned underground mine features in the AASG geothermal data project. The AbandonedUndergroundMine (AUM) worksheet specifies content elements for an interchange format for location, area, volume, heat capacity, temperature and other measurement data obtained for AUMs.  Fields in that spreadsheet will become XML elements in interchange documents for WFS simple features/geothermal data web services. Typically AUM data are recorded in state survey databases, and this information could be provided through an AUM observation service. The HeaderURI for a particular mine is the cross-referencing link (foreign key) used to associate the header record and other information from a particular AUM.\r\n",
+        "status": "Version 0.3 is now available for wider system use.&nbsp; Any necessary revisions of this new content model should be entered and discussed at <a href=\"https://github.com/usgin-models/AbandonedMines\">https://github.com/usgin-models/AbandonedMines</a>\r\n",
+        "discussion": "<br>\r\n",
+        "versions": [
+            {
+                "sld_file_path": null,
+                "version": "0.3",
+                "xsd_file_path": "http://schemas.usgin.org/files/abandoned-mines/0.3/AbandonedMines.xsd",
+                "date_created": "2014-04-17",
+                "layers_info": {
+                    "AbandonedMine": [
+                        {
+                            "optional": true,
+                            "type": "int",
+                            "name": "OBJECTID",
+                            "description": "Integer record count, added by ArcGIS servers during service deployment; not required but cannot be removed when deploying from ArcGIS feature class. Not user maintained, so this element appears in XML implementation but not in the Content Model Template."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "FeatureURI",
+                            "description": "Unique identifier that specifies the feature represented: e.g. a geologic feature, mine, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "MineName",
+                            "description": "Common or human-readable name by which the mine is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "APINo",
+                            "description": "API number for the the wellboreborehole identified by the HeaderURI. If an API number is unavailable this field is empty. Usage of hyphens is optional, according to standard practice in each state. API number refers to the American Petroleum Institute number. Each oil, gas, or geothermal well drilled in the United States has a unique API number; this number identifies all boreholes or recompletions associated with the original wellbore. See http:www.spwla.orgtechnicalapi-technical for more information about API numbering."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "HeaderURI",
+                            "description": "Unique identifier for this observation. This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http:resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "OtherID",
+                            "description": "Alternative identifier(s) for the feature. Indicate the authority from which the OtherID is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe '|' character. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the prefix would be azgs: and the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "OtherName",
+                            "description": "Other human-intelligible labels for feature such as secondary name or common name, other spellings. Indicate the authority from which the OtherName is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "Label",
+                            "description": "Short text string for labeling the feature on maps. Can be the same as feature name. A label may be an OtherLocationName, OtherID or the Name or some combination."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "Operator",
+                            "description": "Name of the operator of the mine identified by the Feature URI.  Name of company/organization that is operating the mine during the reporting period."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "LeaseName",
+                            "description": "Name or number of the lease of the mine identified by the Feature URI. The LeaseName may be a concatenation of the Lease Owner and Number."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "LeaseOwner",
+                            "description": "Name of the lease owner of the mine identified by the FeatureURI."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "LeaseNo",
+                            "description": "Lease number of the mine identified by the FeatureURI."
+                    },
+                        {
+                            "optional": true,
+                            "type": "dateTime",
+                            "name": "MineStartDate",
+                            "description": "Date on which development commenced for the mine identified by the FeatureURI.  Use format YYYY-MM-DDThhr:mm. If date is unknown, provide best guess and so note in the 'Notes' field. This is intended as a searching aid."
+                    },
+                        {
+                            "optional": true,
+                            "type": "dateTime",
+                            "name": "EndedMiningDate",
+                            "description": "Date on which operations ended for the mine identified by the FeatureURI.  Use format YYYY-MM-DDThhr:mm. If date is unknown, provide best guess and so note in the 'Notes' field. This is intended as a searching aid."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "MineOrOpeningType",
+                            "description": "Type of mine identified by the FeatureURI, at the time indicated in the StatusDate element. Vocabulary should be drawn from a standard list. This field is intended to specify mine type according to data provider's conventions."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "CommodityOfInterest",
+                            "description": "The commodity of interest associated with the mine identified by the FeatureURI, at the time indicated in the StatusDate element."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "Status",
+                            "description": "Status of the feature at the time indicated in the StatusDate element. If unknown enter \"unknown\" in the field."
+                    },
+                        {
+                            "optional": true,
+                            "type": "dateTime",
+                            "name": "StatusDate",
+                            "description": "The status of the feature can change from time to time, thus it is useful to know the date on which a given status was reported. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "Function",
+                            "description": "Functional characterization of the mine identified by the FeatureURI, at the time indicated in the StatusDate element."
+                    },
+                        {
+                            "optional": true,
+                            "type": "dateTime",
+                            "name": "ReleaseDate",
+                            "description": "Date on which data for the mine identified by the FeatureURI, was or will be made public.  If no date is reported, no confidential information is on moratorium. Use format YYYY-MM-DD."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "Field",
+                            "description": "Name of coal or other mineral field in which the mine identified by the FeatureURI is located. Delimit multiple values with the pipe character '|'."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "OtherLocationName",
+                            "description": "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. Separate multiple keywords with the pipe '|' character."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "County",
+                            "description": "Required. County name. If unknown or not applicable use 'missing'. If offshore, specify 'offshore' in this field."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "State",
+                            "description": "Required. State name without abbreviations. If unknown or not applicable use 'missing'. For offshore locations, specify the governing or nearest state and list the county as 'offshore'."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "PLSS_Meridians",
+                            "description": "List north-south baseline and east-west meridian that Townships and Ranges are referenced to."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "TWP",
+                            "description": "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001N."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "RGE",
+                            "description": "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "Section_",
+                            "description": "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "SectionPart",
+                            "description": "Subdivision of a PLSS section."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "Parcel",
+                            "description": "Legal parcel identifier, or block number, or other parcel or location identifier."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "UTM_E",
+                            "description": "UTM easting coordinate as decimal number."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "UTM_N",
+                            "description": "UTM northing coordinate as decimal number."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "UTMDatumZone",
+                            "description": "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "LatDegree",
+                            "description": "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "LongDegree",
+                            "description": "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "SRS",
+                            "description": "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "LocationUncertaintyStatement",
+                            "description": "Information on how the original location was determined, e.g.: 1:250,000 map, gps unit, Google Earth, PLSS Conversion, Spatial Datum Conversion, e.g., NAD27 to WGS84."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "Mine_City_Distance_km",
+                            "description": "Distance in kilometers (km) from mine to nearest population center."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "WatershedName",
+                            "description": "Name of the watershed located above, or in communication with, mine workings. Delimit multiple watershed names with the pipe character '|'."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "HUCode",
+                            "description": "Hydrologic Unit Code (HUC/HUCode). 12 digits. The United States is divided and sub-divided into successively smaller Hydrologic Units (HU) which are classified into four levels: regions, sub-regions, accounting units, and cataloging units. Cataloging Units sometimes are called \"watersheds\".  The hydrologic units are arranged or nested within each other, from the largest geographic area (regions) to the smallest geographic area (cataloging units). Each hydrologic unit is identified by a unique hydrologic unit code (HUC) based on the four levels of classification in the hydrologic unit system. http://water.usgs.gov/GIS/huc.html"
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "HydroNarrative",
+                            "description": "Free text used to report watershed/stream information."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "DepthOfMine_km",
+                            "description": "Vertical distance from lowest point of mine to elevation of mine origin."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "ElevationGL_m",
+                            "description": "Elevation at ground level for the origin of the mine identified by the FeatureURI. Measurement should be made with respect to mean sea level (MSL) and be reported in decimal meters (m)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "AboveBelowWaterTable",
+                            "description": "Used to designate is mine above water table, below water table, or above and below water table. "
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "FormationDepositName",
+                            "description": "Name of geologic unit at the bottom of the mine identified by the FeatureURI. Include hierarchy of names if the unit is part of a higher-rank geologic unit, e.g. Group name/Formation name, or Formation/Member, or Group/ Formation. Spell out unit names in full. Multiple names separated by pipe '|' characters."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MineDepositArea_m2",
+                            "description": "Estimated area of the surface projection of the underground workings. Report measurement in decimal units. Report all areas in decimal units of sqare meters (m2)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "AveThicknessMineDeposit_m",
+                            "description": "Estimated thickness of mined area of the mine identified by the FeatureURI. Measurement must be reported in decimal meter units. Mining operations may not have mined the entire seam or mined more than the seam thickness, so mine thickness is generally more normalized due to tunnel height etc for humans to access and remove coal. "
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MineVolume_m3",
+                            "description": "Report gross volume of mine here. Report in cubic meters (m3). Gross volume is the entire mine volume with and without (voids) groundwater. "
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "EffectiveVolume__m3",
+                            "description": "Report estimated volume of mine void space here. Report in cubic meters (m3). Effective volume is the total volume of the void space."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MaxRechargeArea_km2",
+                            "description": "Report estimated maximum area to recharge mine void space here. Report all areas in decimal units of sqare kilometers."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MinRechargeArea_km2",
+                            "description": "Report estimated minimum area to recharge mine void space here. Report all areas in decimal units of sqare kilometers."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "GroundwaterFlowDirection",
+                            "description": "Estimated direction of groundwater flow. Report all directions using the NSEW convention. N, ESE, SW etc."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "GWDischargeDistance_m",
+                            "description": "Estimated discharge length of groundwater, reported in decimal meter units. Discharge is measured by a volume (length [or distance traveled] x thickness) of water to pass through a cross section area."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "DischargeThickness_m",
+                            "description": "Report estimated discharge thickness here; reported in decimal meter units. Discharge is measured by a volume (length [or distance traveled] x thickness) of water to pass through a cross section area."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MeanAnnualPrecip_in",
+                            "description": "Mean annual precipitation for the location of the mine identified by the FeatureURI. Precipitation from NOAA precipitation measurement network sources. Use decimal inch units. Because official precipitation measurements in the U.S. are inches, that is used here."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "CrossSectionArea_m2",
+                            "description": "Report estimated maximum area of cross section of recharge here; use square meters, m2."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "EffectiveCrossSectionArea_m2",
+                            "description": "Report estimated effective area of cross section of recharge here; use square meters, m2."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "CrossSectionAreaProceedure",
+                            "description": "Free text for any notes pertaining to proceedures for cross section area estimates; used to provide method of area determination."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "AveRechargeRateGrndwtrVol1_m3yr",
+                            "description": "The mean recharge rate to groundwater volume for the mine identified by the FeatureURL. Report in cubic meters per year (m3/yr).  Method 1. (See Notes tab)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MaxMineRechargeVolGrndwtr1_m3yr",
+                            "description": "Report estimated maximum volume of recharge of mine void space here, reported in cubic meters per year (m3/yr) using Method 1.  (See Notes tab). "
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MinMIneRechargeGrndwtrVol1_m3yr",
+                            "description": "Report estimated minimum volume of recharge of mine void space here, reported in cubic meters per year (m3/yr) using Method 1.  (See Notes tab). "
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "RechargeProcedure1",
+                            "description": "Text description of measurement procedure and methods used to calculate corrections using Method 1. (See Notes tab). "
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MaxResidenceTime1_yr",
+                            "description": "Report estimated maximum Residence time (Method 1) of recharge water in mine void space here. Use decimal year units. The residence time calculation illustrates the rate in which water is being circulated through the mine. "
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MinResidenceTime1_yr",
+                            "description": "Report estimated minimum Residence time (Method 1) of recharge water in mine void space here. Use decimal year units. The residence time calculation illustrates the rate in which water is being circulated through the mine. "
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MaxMineWtrVel1_myr",
+                            "description": "Maximum estimated mine water velocity in meters/year. (see Linear Groundwater Velocity on Notes tab)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MinMineWtrVel1_myr",
+                            "description": "Minimum estimated mine water velocity in meters/year. (see Linear Groundwater Velocity on Notes tab)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "AveRechargeRateGrndwtrVol2_m3yr",
+                            "description": "The mean recharge rate to groundwater volume for the mine identified by the FeatureURL. Report in cubic meters per year (m3/yr).  Method 2. (See Notes tab)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MaxMineRechargeVol2_m3yr",
+                            "description": "Report estimated maximum recharge volume of mine void space here, using Method 2.  (See Notes tab). Use m3. "
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MinMineRechargeVol2_m3yr",
+                            "description": "Report estimated minimum recharge volume of mine void space here, using Method 2.  (See Notes tab). Use m3. "
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "RechargeProcedure2",
+                            "description": "Text description of measurement procedure and methods used to calculate corrections using Method 2. (See Notes tab)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MaxResidenceTime2_yr",
+                            "description": "Report estimated maximum Residence time (Method 2) of recharge water in mine void space here. Use decimal year units. The residence time calculation illustrates the rate in which water is being circulated through the mine."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "MinResidenceTime2_yr",
+                            "description": "Report estimated minimum Residence time (Method 2) of recharge water in mine void space here. Use decimal year units. The residence time calculation illustrates the rate in which water is being circulated through the mine. "
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MaxMineWtrVel2_myr",
+                            "description": "Maximum estimated linear velocity of mine water in meters/year. (Linear Groundwater Velocity on Notes tab)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MinMineWtrVel2_myr",
+                            "description": "Minimum estimated linear velocity of mine water in meters/year. (Linear Groundwater Velocity on Notes tab)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "EstAirTemp_C",
+                            "description": "Estimated surface temperature here, in decimal units of Centigrade."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "EstMineWtrTemp_C",
+                            "description": "Report estimated water temperature here, in decimal degrees Centigrade."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "SpecificHeat_kJkgC",
+                            "description": "Estimated specific heat of water at the estimated air temperature. Report in units of kilo Joules per kilogram per degree celcius (kJ/kg/C)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "WaterDensity_kgm3",
+                            "description": "Water density at the estimated temperature. Report in kilograms per cubic meter (kg/m3)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "WaterMass_kg",
+                            "description": "Estimated total mass of mine water, in kilograms (kg)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "double",
+                            "name": "TotalMineHeat_kJ",
+                            "description": "Heat Extractable from the mine per 1 degree C of change, reported in  (kilojoules, kJ)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MinHF1_kJyr",
+                            "description": "Minimum Heat Flux (heat energy transferred by conduction and convection) using Method 1 Kilojoules per year (kJ/y)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MaxHF1_kJyr",
+                            "description": "Maximum Heat Flux (heat energy transferred by conduction and convection) using Method 1 Kilojoules per year (kJ/y)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MinHF2_kJyr",
+                            "description": "Minimum Heat Flux (heat energy transferred by conduction and convection) using Method 2 Kilojoules per year (kJ/y)."
+                    },
+                        {
+                            "optional": false,
+                            "type": "double",
+                            "name": "MaxHF2_kJyr",
+                            "description": "Maximum Heat Flux (heat energy transferred by conduction and convection) using Method 2 (Kilojoules per year (kJ/y)."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "Notes",
+                            "description": "Any additional notes about the mine associated with this FeatureURI that doesn't fit into the template. Methods used, procedures, references, etc."
+                    },
+                        {
+                            "optional": true,
+                            "type": "string",
+                            "name": "RelatedResource",
+                            "description": "This may be one to many http links to resources (logs, pictures or other documents if available online; should be an http: address (URL)) related to the observation described in each record. Delimit multiple values with the pipe '|' character."
+                    },
+                        {
+                            "optional": false,
+                            "type": "string",
+                            "name": "InformationSource",
+                            "description": "Source (provider) of the information in this dataset. May be agency, report, etc."
+                    },
+                        {
+                            "optional": false,
+                            "type": "PointPropertyType",
+                            "name": "Shape",
+                            "description": "Added by GIS for WFS service; this element appears in the xml output, but is generated during service deployment from the latitude and longitude, therefore it doesn't appear in the template."
+            }]
+                },
+                "xls_file_path": "http://schemas.usgin.org/files/abandoned-mines/0.3/AbandonedMines.xls",
+                "uri": "http://stategeothermaldata.org/uri-gin/aasg/xmlschema/mines/0.3",
+                "sample_wfs_request": "http://geothermal.isgs.illinois.edu/arcgis/services/aasggeothermal/OHAbandonedMines/MapServer/WFSServer?request=GetFeature&service=WFS&TypeName=AbandonedMine"
+    }],
+        "uri": "http://stategeothermaldata.org/uri-gin/aasg/xmlschema/mines/",
+        "label": "mines"
+}

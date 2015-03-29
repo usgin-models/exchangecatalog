@@ -1,0 +1,88 @@
+Keyword,FeatureType,ExcelDataTab,NamespaceURI
+usgincm:Quaternary Fault,ActiveFault,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/activefault/1.1
+usgincm:Abandoned Mines,AbandonedMine,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/mines/0.3
+usgincm:Active Fault,ActiveFault,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/activefault/1.1
+usgincm:Active Fault1.2,ActiveFault,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/activefault/1.2
+usgincm:Aqueous Chemistry.WaterQuality1.10,WaterQuality,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.CommonAnalytes1.10,CommonAnalytes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.BaseMetals1.10,BaseMetals,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.MajorDissolvedConstituents1.10,MajorDissolvedConstituents,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.MinorDissolvedConstituents1.10,MinorDissolvedConstituents,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.Nitrogen1.10,Nitrogen,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.WaterDissolvedGas1.10,WaterDissolvedGas,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.FreeGas1.10,FreeGas,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.WaterIsotopes1.10,WaterIsotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.GasIsotopes1.10,GasIsotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.IsotopesDissolved1.10,IsotopesDissolved,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.SingleAnalyte1.10,SingleAnalyte,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.10
+usgincm:Aqueous Chemistry.WaterQuality,WaterQuality,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.CommonAnalytes,CommonAnalytes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.BaseMetals,BaseMetals,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.MajorDissolvedConstituents,MajorDissolvedConstituents,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.MinorDissolvedConstituents,MinorDissolvedConstituents,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.Nitrogen,Nitrogen,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.WaterDissolvedGas,WaterDissolvedGas,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.FreeGas,FreeGas,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.WaterIsotopes,WaterIsotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.GasIsotopes,GasIsotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.IsotopesDissolved,IsotopesDissolved,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.SingleAnalyte,SingleAnalyte,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/aqueouschemistry/1.9
+usgincm:Aqueous Chemistry.MineralRecoveryBrine,,,
+usgincm:Borehole Lithology Intercepts,BoreholeLithIntercept,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/bhlithintercept/1.1
+usgincm:Borehole Lithology Interval Feature,BoreholeLithInterval,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/bhlithinterval/0.9
+usgincm:Borehole Temperature Observation,BoreholeTemperature,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/boreholetemperature/1.5
+usgincm:Contour Lines,ContourLine,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/contourlines/1.0
+usgincm:Direct Use Feature,DirectUseSite,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/directusesite/1.5
+usgincm:DrillStemTest,DrillStemTest,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/drillstemtest/1.8
+usgincm:Shear Displacement Structure,ShearDisplacementStructureView,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geosciml-portrayal-units/2.0
+usgincm:Fault Feature,Fault,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geosciml-portrayal-faults/1.0
+usgincm:Fault Feature1.1,Fault,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geosciml-portrayal-faults/1.1
+usgincm:Fluid Flux Injection and Disposal,FluidFluxInjection,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/fluidfluxinjection/1.1
+usgincm:Geologic Contact Feature,ContactView,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geosciml-portrayal-units/2.0
+usgincm:Geologic Reservoir,GeologicReservoir,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geologicreservoir/0.2
+usgincm:Geologic Units,GeologicUnitView,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geosciml-portrayal-units/2.0
+usgincm:Geothermal Area,GeothermalArea,,http://schemas.usgin.org/files/geothermal-area/0.5/GeothermalArea0.5.xls
+usgincm:Geothermal Area0.7,GeothermalArea,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermalarea/0.7
+usgincm:Geothermal Fluid Production,GeothermalFluidProduction,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermalfluidproduction/1.1
+usgincm:Geothermal Metadata Compilation,,,
+usgincm:Geothermal Power Plant Facility,PowerPlantFacility,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/PowerPlantFacility/0.2
+usgincm:Gravity Stations,GravityStation,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/gravitystations/0.1
+usgincm:Heat Flow,HeatFlow,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/heatflow/1.15
+usgincm:Heat Flow1.23,HeatFlow,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/heatflow/1.23
+usgincm:Heat Pump Facility,HeatPumpFacility,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/HeatPumpFacility/0.6
+usgincm:Hydraulic Properties,HydraulicProperty,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/hydraulicproperties/1.0
+usgincm:Mineral Recovery Brines,,,
+usgincm:Physical Sample,PhysicalSample,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/physicalsample/0.8
+usgincm:Powell Cummings Geothermometry.GasAnalysis,GasAnalysis,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermometry/0.1
+usgincm:Powell Cummings Geothermometry.LiquidAnalysis,LiquidAnalysis,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermometry/0.1
+usgincm:Powell Cummings Geothermometry.GasAnalysis2.0,GasAnalysis,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermometry/2.0
+usgincm:Powell Cummings Geothermometry.LiquidAnalysis2.0,LiquidAnalysis,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/geothermometry/2.0
+usgincm:Power Plant Production,PlantProduction,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/PowerPlantProduction/0.8
+usgincm:Power Plant Production1.0,PlantProduction,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/PowerPlantProduction/1.0
+usgincm:Radiogenic Heat Production,RadiogenicHeatProduction,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/radiogenicheatproduction/0.5
+usgincm:Rock Chemistry.USeries,USeries,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.Isotopes,Isotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.TraceElements,TraceElements,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.WRMajorElements,WRMajorElements,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.StableIsotopes,StableIsotopes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.RareEarths,RareEarths,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.Volatiles,Volatiles,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.NobleGases,NobleGases,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.SingleAnalytes,SingleAnalytes,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/rockchemistry/0.4
+usgincm:Rock Chemistry.MineralRecoveryBrine,,,
+usgincm:Seismic Event Hypocenter,EarthquakeHypocenter,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/hypocenter/1.2.2
+usgincm:Seismic Event Hypocenter1.6,EarthquakeHypocenter,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/hypocenter/1.6
+usgincm:Seismic Event Hypocenter1.7,Hypocenter,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/hypocenter/1.7
+usgincm:Thermal Conductivity Observation,MDThermalConductivity,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalconductivity/1.5
+usgincm:Thermal Conductivity Observation1.6,ThermalConductivity,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalconductivity/1.6
+usgincm:Thermal Conductivity Observation2.0,ThermalConductivity,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalconductivity/2.0
+usgincm:Thermal Conductivity Observation2.1,ThermalConductivity,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalconductivity/2.1
+usgincm:Hot Spring Feature,ThermalSpring,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalspring/1.6
+usgincm:Hot Spring Feature1.8,ThermalSpring,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/thermalspring/1.8
+usgincm:Volcanic Vents,VolcanicVent,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/volcanicvent/1.0
+usgincm:Volcanic Vents1.4,VolcanicVent,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/volcanicvent/1.4
+usgincm:Well Fluid Production,FluidProduction,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/fluidproduction/1.1
+usgincm:Well Header Observation,Wellheader,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/wellheader/1.5
+usgincm:Well Log Observation,WellLog,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/welllog/0.8
+usgincm:Well Tests,WellTest,,http://stategeothermaldata.org/uri-gin/aasg/xmlschema/WellTest/1.0
+usgincm:GeoSciML,,,
